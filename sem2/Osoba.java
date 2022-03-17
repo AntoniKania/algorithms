@@ -30,7 +30,7 @@ public class Osoba implements Comparable<Osoba> {
         this.dataUr = dataUr;
     }
     public String toString() {
-        return nazwisko + " " + imie + " " + dataUr + " wiek " + String.format("%6.2f\n", wiek(dataUr));
+        return nazwisko + " " + imie + " " + dataUr + " wiek " + String.format("%6.2f", wiek(dataUr));
     }
     public double wiek(String dataUr) {
         String[] data = dataUr.split("-");
